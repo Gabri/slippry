@@ -17,7 +17,7 @@
     <nav id="main-menu">
       <li><a href="/settings" class="button-link">Settings</a></li>
       <li><a href="/examples" class="button-link">Examples</a></li>
-      <li><a href="https://github.com/booncon/slippry/archive/v1.3.1.zip
+      <li><a href="https://github.com/booncon/slippry/archive/v1.4.0.zip
 " title="Download this repository as a zip file" rel="nofollow" class="button-link download">Download</a></li>
     </nav>
   </div>
@@ -124,6 +124,42 @@
 </code></pre>
 </section>
 
+<section class="jquery restricted-width">
+  <h3>CSS</h3>
+<pre class="highlight css"><code><span class="c">/* Thumbnails */</span>
+<span class="nc">.thumb-box</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">1.4em</span> <span class="m">0</span> <span class="m">1em</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="m">-1%</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">102%</span><span class="p">;</span>
+  <span class="err">.thumbs</span> <span class="err">{</span>
+    <span class="err">@include</span> <span class="err">clearfix;</span>
+    <span class="err">li</span> <span class="err">{</span>
+      <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+      <span class="nl">width</span><span class="p">:</span> <span class="m">25%</span><span class="p">;</span>
+      <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+      <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span> <span class="m">1%</span><span class="p">;</span>
+      <span class="err">img</span> <span class="err">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+        <span class="nl">opacity</span><span class="p">:</span> <span class="m">.8</span><span class="p">;</span>
+        <span class="err">@include</span> <span class="err">transition(opacity</span> <span class="err">.32s);</span>
+        <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">4px</span> <span class="nb">solid</span> <span class="nb">transparent</span><span class="p">;</span>
+        <span class="err">&amp;.active</span> <span class="err">{</span>
+          <span class="nl">border-color</span><span class="p">:</span> <span class="err">$</span><span class="n">bc-rk-blue</span><span class="p">;</span>
+          <span class="nl">opacity</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+        <span class="p">}</span>
+      <span class="err">}</span>
+      <span class="o">&amp;</span><span class="nd">:hover</span> <span class="p">{</span>
+        <span class="err">img</span> <span class="err">{</span>
+          <span class="nl">opacity</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+          <span class="err">@include</span> <span class="err">transition(opacity</span> <span class="err">.2s);</span>
+        <span class="p">}</span>
+      <span class="err">}</span>
+    <span class="err">}</span>
+  <span class="err">}</span>
+<span class="err">}</span>
+</code></pre>
+</section>
+
 <section class="restricted-width example-tiles">
 <a class="tile" href="/examples/out-of-the-box/">Out-of-the-box</a>
 <a class="tile" href="/examples/pictures/">Pictures</a>
@@ -133,6 +169,7 @@
 <a class="tile active" href="/examples/thumbnails/">Thumbnails</a>
 <a class="tile" href="/examples/css-vs-jquery/">CSS vs jQuery</a>
 </section>
+
     <footer id="footer" class="full-width">
   <div class="footer-content restricted-width">
     <div class="githubs">
